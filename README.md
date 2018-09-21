@@ -59,7 +59,7 @@ Components are the smallest building blocks of the application. Scenes, containe
 A React component (preferably a [functional component](https://facebook.github.io/react/docs/components-and-props.html#functional-and-class-components)) with **no data and no behaviour. Pure presentation/UI**. Sometimes referred to as _dumb components_ or _presentational components_.
 
 ### Services
-Services are React’s [Higher-Order Components (hoc)](https://facebook.github.io/react/docs/higher-order-components.html). Services provide data and behaviour to containers. Encapsulating data and behaviour in a _service_ in stead of in a _container_ has the advantage of being very reusable inside your application. Especially if your project has both React and React Native code.
+Services are React’s [Higher-Order Components (hoc)](https://facebook.github.io/react/docs/higher-order-components.html). Services provide data and behaviour to containers. Encapsulating data and behaviour in a _service_ instead of in a _container_ has the advantage of being very reusable inside your application. Especially if your project has both React and React Native code.
 
 ### REDUX Reducers, Actions, Action types and Selectors
 Each module should maintain their own state and actions. Every action type is prefixed with the module’s name to avoid name collisions.
@@ -84,7 +84,7 @@ Also, this allows other modules to access the _cart_ state without having to kno
 Only [Services](#services) should access the state, and pass the relevant data as props to the [Containers](#containers).
 
 ### REDUX Sagas
-Reducers and action types should be plain functions and as simple as possible. In stead, use [redux-saga](https://github.com/redux-saga/redux-saga) for your side effects and application flows.
+Reducers and action types should be plain functions and as simple as possible. Instead, use [redux-saga](https://github.com/redux-saga/redux-saga) for your side effects and application flows.
 
 [This stackoverflow](http://stackoverflow.com/questions/34930735/pros-cons-of-using-redux-saga-with-es6-generators-vs-redux-thunk-with-es7-async/34933395#34933395) gives a good explanation of why you should prefer redux-saga over e.g. redux-thunk.
 
